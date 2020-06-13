@@ -28,7 +28,7 @@ def preprocessSequenceWithActions(sequence):
 # output: none. THE ORIGINAL LIST IS MODIFIED!
 def preprocessSequenceNoActions(sequence):
     from PIL import Image
-    for i in range(0,len(sequence)):                # look at all elements in the list
+    for i in range(len(sequence)):                # look at all elements in the list
         ob = sequence[i]
         sequence[i] = preprocessImage(ob)           # preprocess and reassign
     return
